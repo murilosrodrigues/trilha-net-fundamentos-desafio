@@ -22,7 +22,9 @@ bool exibirMenu = true;
 // Realiza o loop do menu
 while (exibirMenu)
 {
+    #if(!DEBUG)
     Console.Clear();
+    #endif
     Console.WriteLine("Digite a sua opção:");
     Console.WriteLine("1 - Cadastrar veículo");
     Console.WriteLine("2 - Remover veículo");
